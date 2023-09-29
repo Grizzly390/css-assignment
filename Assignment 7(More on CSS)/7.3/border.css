@@ -1,0 +1,40 @@
+nav{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#008fff;
+}
+
+a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.home{
+    border-style: dotted;
+}
+
+.about{
+    border-style: double;
+}
+
+.cont{
+    border-style: groove;
+}
+
+.blog{
+    border-style: dashed;
+}
+
+.log{
+    border-style: solid;
+}
+
+a:hover{
+    color: red;
+}
