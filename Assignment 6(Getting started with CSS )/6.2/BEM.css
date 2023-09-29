@@ -1,0 +1,45 @@
+body{
+    background-color: cyan;
+}
+
+.header{
+    background-color: chartreuse;
+    color: black;
+    text-align: center;
+}
+
+.header__content{
+    background-color: tomato;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content__heading{
+    background:#890;
+    color: black;
+    text-align: center;
+}
+
+.content__about{
+    background: #255;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.conclusion__heading{
+    background: #360;
+    color: black;
+    text-align: center;
+}
+
+.conclusion__about{
+    background-color: #499;
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact__heading{
+    background-color: #056;
+    color: black;
+    text-align: center;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different ways to add CSS</title>
+    <style>
+        /* Internal CSS goes in here*/
+    h1{
+        background-color: tomato;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .internal_css {
+            background-color: yellowgreen;
+            color: darkblue;
+            text-align: center;
+            font-family: cursive;   
+        }
+    /* This CSS is for targeting the common element*/
+    #ccss {
+        background-color: blueviolet;
+        color: black;
+        text-align: left;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    </style>
+    <link rel="stylesheet" href="./external.css"><!--In this we'll create a CSS file and link it with this html document.-->
+</head>
+<body>
+    <h1> Different ways to add CSS</h1>
+    <div Class="internal_css" id="icss">
+    <h2>Internal CSS</h2>
+    <p>This is internal CSS.</p>
+    </div>
+
+    <div class="external_css" id="excss">
+        <h2>External CSS</h2>
+        <p>This is an External CSS</p>
+    </div>
+    
+    <div class="inline_css" style="background-color: blue; color: black; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;" >
+        <h2>Inline CSS</h2>
+        <p>This is an Inline CSS</p>
+    </div>
+
+<!--Here we are targeting the same element by differnt ways of adding CSS but only style will be processed in the output. 
+It's because of the rendering speed. Inline CSS is the fastest than the other types of CSS. The order in terms of speed are Inline CSS > Internal CSS > External CSS.
+When we will target the same element only the Inline CSS will be rendered.-->
+    <div class="common" id="ccss" style="background-color: aqua; color: red; text-align: center; font-family: 'Times New Roman', Times, serif;">
+        <h2>same element</h2>
+        <p>Here we are targeting the same element by differnt ways of adding CSS.</p>
+    </div>
+</body>
+</html>

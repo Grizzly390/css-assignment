@@ -1,0 +1,13 @@
+#excss{
+    background-color: springgreen;
+    color: crimson;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+/*This CSS is for targeting the common element*/
+#ccss{
+    background-color: burlywood;
+    color: yellow;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+}

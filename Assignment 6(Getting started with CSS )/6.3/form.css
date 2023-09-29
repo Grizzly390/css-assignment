@@ -1,0 +1,101 @@
+body{
+    background-color:#696969;
+    text-align: center;
+}
+
+.fname:hover{
+    background-color: yellow;
+}
+
+#fname{
+    background-color: yellow;
+}
+
+.lname:hover{
+    background-color:#7fff00;
+}
+
+#lname{
+    background-color: #7fff00;
+}
+
+.email:hover{
+    background-color: yellowgreen;
+}
+
+#email{
+    background-color: yellowgreen;
+    opacity: 0.6; /*Here we have applied opacity. The value can vary from 0 to 1 . We can change the value according to our need.*/
+}
+
+.pass:hover{
+    background-color: #c0c0c0;
+}
+
+#pass{
+    background-color: #c0c0c0;
+}
+
+.conpass:hover{
+    background-color: #ffb6c1;
+}
+
+#conpass{
+    background-color: #ffb6c1;
+}
+
+.age:hover{
+    background-color: #7b68ee;
+}
+
+#age{
+    background-color: #7b68ee;
+}
+
+.edq:hover{
+    background-color: #F0E68C;
+}
+
+#edq{
+    background-color: #F0E68C;
+}
+
+.gen:hover{
+    background-color: violet;
+}
+
+#gen{
+    background-color: violet;
+}
+
+.prof:hover{
+    background-color: 	#90EE90;
+}
+
+#prof{
+    background-color: 	#90EE90;
+}
+
+.hobb:hover{
+    background-color: #4682B4;
+}
+
+#hobb{
+    background-color: #4682B4;
+}
+
+.pic:hover{
+    background-color: #F4A460;
+}
+
+#pic{
+    background-color: #F4A460;
+}
+
+.docs:hover{
+    background-color: whitesmoke;
+}
+
+#docs{
+    background-color: whitesmoke;
+}

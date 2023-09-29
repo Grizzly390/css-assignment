@@ -1,0 +1,50 @@
+<!--BEM(Block Element MOdifier) naming convention is a way to structure and name our HTML and CSS code for better organization and maintainability. It breaks down into three parts: Block, Element and Modifier.
+
+1. Block: A Block is a standalone container that represents a self-contained part of our webpage. Block name should be written in lowercase and use hyphens to seperate words like 'header', 'footer' or 'button'.
+
+2. Element: An Element is a smaller part within a block that can't funcction independently. Elements are always tied to a specific block. Element names are written with two underscores('__') after the block name.
+
+3. Modifier: A Modifier is used to change the apperance, behaviour or state of block or element. Modifier names are written with two hyphens ('--') after the block or element name.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Naming convention</title>
+    <link rel="stylesheet" href="./BEM.css">
+</head>
+<body>
+    <h1 class="header">My Website</h1><!--This is a block.-->
+    <div class="header__content"><!--This is an element.-->
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit voluptatum pariatur impedit, culpa blanditiis error illo dolores consequatur rerum obcaecati. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi rerum id mollitia, praesentium nemo aut iure nesciunt quo natus qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, delectus?
+        </p>
+    </div>
+
+    <div class="Content"><!--This is a block.-->
+        <h2 class="content__heading">Content</h2><!--This is an element-->
+        <p class="content__about"><!--This is an element-->
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem voluptatibus totam placeat unde quia? Praesentium, eaque unde. Architecto, recusandae. Sint vel cum consectetur et cumque qui exercitationem deserunt labore laborum eius laboriosam, ex animi, reprehenderit quo, atque soluta ut aspernatur deleniti aliquid minima voluptatem autem placeat maxime magni. Necessitatibus exercitationem eos iste. Illo repudiandae quas quo similique vitae. Iusto fuga quam quidem sapiente amet voluptatum? Eaque rem id maiores harum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem asperiores aliquid perferendis! Totam odio tempora maxime corrupti illum nulla, voluptatibus voluptas assumenda, eius voluptate, aliquam amet! Voluptatibus laboriosam dignissimos beatae assumenda eveniet. Autem, voluptate culpa veniam ratione possimus quaerat amet nam praesentium tempore laborum ut in odit quidem blanditiis illum saepe asperiores ea quae, iste dolores deserunt a dignissimos! Dolores magnam non est esse, quae fugiat dicta maiores magni provident, repellendus nisi aspernatur unde illo. Delectus suscipit mollitia non exercitationem? Quas sit doloremque ea provident mollitia! Commodi in at maiores sequi eius? Rem illum mollitia perferendis eius doloremque, dolore tempore error in est totam dicta. Incidunt eligendi adipisci, dicta, voluptas quae a itaque, tempore debitis natus soluta vitae culpa minima! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, pariatur doloremque at id consequatur dolorem explicabo similique officia reiciendis quas non laborum neque illum excepturi corrupti a unde tempore placeat, ipsa deleniti libero. Quos, aspernatur laudantium cum necessitatibus placeat dolore laboriosam natus ipsa exercitationem molestias. Corporis suscipit ab omnis cumque fugiat. Rem officiis possimus, quos id et est odio nostrum sit, unde reprehenderit maxime. Accusamus fugit temporibus, quidem consequuntur officia ratione amet illum doloribus vero. Recusandae quos autem quisquam fugiat temporibus nostrum, nulla non consequuntur modi doloremque. Quas soluta illum amet omnis ab nemo a repellendus? Expedita aliquid nam nemo iusto error commodi earum numquam unde ratione, dolorum id beatae placeat dolor necessitatibus voluptates repellat dicta quas alias exercitationem. Ipsum cumque pariatur tempora, consequuntur sunt explicabo facilis blanditiis expedita mollitia ipsa culpa saepe est? Maxime, at beatae! Praesentium quia exercitationem assumenda porro est voluptatibus corrupti soluta beatae! Consectetur corporis quam necessitatibus fuga soluta exercitationem quo, beatae nihil ipsum provident explicabo eos, nulla ratione corrupti deserunt consequatur. Accusantium fugit nam officia dolore voluptas obcaecati facilis quidem dolores sed placeat odio aut vitae voluptates expedita provident hic mollitia at libero harum laudantium, beatae deserunt quas? Doloribus repellat inventore facilis nobis, aut asperiores.
+        </p>
+    </div>
+
+    <div class="conclusion"><!--This is a block-->
+        <h2 class="conclusion__heading">Conclusion</h2><!--This is an element-->
+        <p class="conclusion__about"><!--This is an element-->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et amet provident nisi maxime sunt distinctio adipisci laboriosam sint eum quis excepturi sapiente tempora officiis voluptatem debitis quisquam dolor, nostrum doloribus facilis minima iste voluptas dignissimos! Animi nostrum optio voluptate? Consequatur, impedit quos? Odio incidunt optio saepe? Aut cumque dolor maiores perspiciatis. Quam necessitatibus modi iste, non molestiae labore consequuntur tempore similique doloribus eius ipsum, facere, aliquid nemo iusto. Iusto, dolor!
+        </p>
+    </div>
+
+    <div class="contact"><!--This is a block.-->
+        <h2 class="contact__heading">Contact us</h2><!--This is an element-->
+        <nav class="contact__navigation--active"><!-- This is a modifier.-->
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

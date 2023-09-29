@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Sign up:</h1>
+
+    <form action="./signup.js" method="get">
+    <label for="fname" class="fname">First name</label>
+    <input type="text" placeholder="Enter your first name" name="fname" id="fname" minlength="3" required>
+    
+    <br><br>
+    
+    <label for="lname" class="lname">Last name</label>
+    <input type="text" placeholder="Enter you last name " name="lname" id="lname" minlength="3" required>
+    
+    <br><br>
+    
+    <label for="email" class="email"> Enter your email</label>
+    <input type="email" placeholder="Enter your email" name="email" id="email" minlength="3" required> <!--Here we have applied the opacity. We can apply opacity by using CSS. The opacity can vary from 0 to 1. we can adjust the value according to our need.-->
+    
+    <br><br>
+    
+    <label for="pass" class="pass">Enter your password</label>
+    <input type="password" placeholder="Enter your password" name="pass" id="pass" minlength="8" required>
+    
+    <br><br>
+    
+    <label for="conpass" class="conpass">Confirm password</label>
+    <input type="password" placeholder="Confirm your password" name="password" id="conpass" minlength="8" required>
+    
+    <br><br>
+    
+    <label for="age" class="age">Enter your age(in years)</label>
+    <input type="number" placeholder="age(in years)" name="age" id="age" min="0" max="150" required>
+    
+    <br><br>
+    
+    <label for="edq" class="edq">Educational Qualifications</label>
+    <select name="Educational Qualifications" id="edq" required>
+        <option value="uneducated">Uneducated</option>
+        <option value="pre-primary">Pre-Primary</option>
+        <option value="primary">primary</option>
+        <option value="High school"> High school</option>
+        <option value="Secondary">Secondary</option>
+        <option value="graduate">Graduate</option>
+        <option value="post graduate">Post Graduate</option>
+        <option value="Doctorate">Doctorate</option>
+    </select>
+    
+    <br><br>
+    
+    <label for="gen" class="gen">Gender</label>
+    <select name="gender" id="gen" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+    </select>
+    
+    <br><br>
+    
+    <label for="prof" class="prof">Profession</label>
+    <select name="Profession" id="prof" required>
+        <option value="unemployed">unemployed</option>
+        <option value="student">student</option>
+        <option value="Farmer">Farmer</option>
+        <option value="Salaried employee">Salaried employee</option>
+        <option value="Businessman">Businessman</option>
+        <option value="self employed">self employed</option>
+    </select>
+    
+    <br><br>
+    
+    <label for="hobb" class="hobb">Hobbies</label>
+    <input type="text" placeholder="Enter your Hobbies(at least one)" size="30" name="hobb" id="hobb" required>
+    
+    <br><br>
+    
+    <label for="pic" class="pic">Upload your picture</label>
+    <input type="file" name="picture" id="pic">
+    
+    <br><br>
+    
+    <label for="docs" class="docs">Upload your Documents</label>
+    <input type="file" name="Documents" id="docs">
+    
+    <br><br>
+    
+    <label for="terms and conditions"><a href="#">Terms and Conditions</a></label>
+    <input type="checkbox" name="terms and conditions" id="terms and conditions" required>
+    
+    <br><br>
+    
+    <input type="submit" value="Sign up">
+    
+    <br><br>
+    </form>
+</body>
+</html>
