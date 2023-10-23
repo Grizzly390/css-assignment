@@ -1,0 +1,29 @@
+<!-- justify-self  is used to set the horizontal alignment for a specific grid item, overriding the default alignment specified by justify-items. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-self</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2 , 1fr);
+            justify-items: center;
+        }
+
+        .item{
+            background-color: yellowgreen;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" style="justify-self: end;">Item 1</div>
+        <div class="item">Item 2</div>
+    </div>
+</body>
+</html>

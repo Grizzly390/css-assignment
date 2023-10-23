@@ -1,0 +1,30 @@
+<!-- justify-items is used to set the default horizontal alignment for all grid items within a grid container. It aligns the items along the grid's inline (horizontal) axis. If we set justify-items on the grid container, all its child items will inherit the specified alignment. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-items</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2 ,1fr);
+            justify-items: center;
+        }
+
+        .item{
+            background-color: yellow;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+    </div>
+</body>
+</html>

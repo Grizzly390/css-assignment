@@ -1,0 +1,58 @@
+<!-- For a given index.html file. Perform the following task, without changing the index.html file.
+
+A. Create a CSS file to apply styles to the HTML element , and link it.
+
+B. Using the combinator selector perform the following task-
+    . Use of any CSS combinator selectors to target all the anchor tags and change the text color to red.
+
+    . Target only the first <h2> tag and change the text and background color using the combinator selector.
+        
+    . Also, select the first <p> tag and change the text color to red.
+        
+C. Using the attribute selector, perform the following task
+    . target the anchor tag with attribute "href" and change color to red and remove the text underline.
+
+    . target the anchor tag with the attribute of class name "active", change the text color, and provide the text style properties with underlining.
+
+    . Target the anchor tag with the attribute of the target whose value is "_self" and change the background color.
+
+D. Using the pseudo selectors, perform the following task 
+
+    . Target the last <p> tag and add "..." i.e. three dots after its value.
+        
+    . Target the list of bullet points and change the color of bullet points without changing the list item's value.
+
+    . Among the three <p> tags target the 2nd <p> tag, select the first letter of the second <p> tag and change the color to red also increase the font size to 30px.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="./index.css"> <!--css file linked-->
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>TOI</h2>
+            <div>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="" target="_blank">Home</a></li>
+                    <li><a href="" class="active" target="_self">About</a></li>
+                    <li><a href="" target="_blank">Services</a></li>
+                    <li><a href="" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+
+            <p>The times of India</p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat aut incidunt reprehenderit quia. Alias tenetur tempore, unde, quibusdam officia corrupti, molestias ab magni ut architecto ex. Debitis quidem aperiam commodi!
+            </p>
+
+            <p>read articles</p>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body{
+    background-color: gray;
+}
+
+a{
+    color: red;
+}
+
+header nav > h2{
+    background-color: turquoise;
+    color: snow;
+}
+
+.active{
+    background-color: yellow;
+}
+
+p:last-child::after{
+   content:'...';
+}
+
+ul{
+    list-style: none;
+}
+
+ul li::before{
+    content: "\2022";
+    color: blue;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+p:nth-of-type(2)::first-letter{
+    color: red;
+    font-size: 30px;
+}

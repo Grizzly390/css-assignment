@@ -1,0 +1,58 @@
+<!-- Problem Statement
+
+Create an image gallery with three images in a row. Use media queries to adjust the layout to two images in a
+row for screens smaller than 800px and one image in a row for screens smaller than 500px.
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pics</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .pic{
+            flex: 33.33%;
+            padding: 20px;
+        }
+
+        @media screen and (max-width:800px) {
+            .pic{
+                flex: 50%;
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            .pic{
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="pic pic1">
+            <img src="https://fastly.picsum.photos/id/932/200/300.jpg?hmac=OPuowRV-58KJtDQbeEri4K8Am_UBqq9o0OFtn3S1ZYk" alt="">
+        </div>
+
+        <div class="pic pic2">
+            <img src="https://fastly.picsum.photos/id/932/200/300.jpg?hmac=OPuowRV-58KJtDQbeEri4K8Am_UBqq9o0OFtn3S1ZYk" alt="">
+        </div>
+
+        <div class="pic pic3">
+            <img src="https://fastly.picsum.photos/id/932/200/300.jpg?hmac=OPuowRV-58KJtDQbeEri4K8Am_UBqq9o0OFtn3S1ZYk" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+Q2. Explain the role of the following key properties in the Flexbox layout modesl
+1. justify-content
+2. align-items
+3. gap
+4. flex-direction
+5. flex-wrap
+
+
+
+1. justify-content: 
+        justify-content  in Flexbox controls how items inside a container are arranged along the horizontal or vertical line, depending on whether it's a row or column layout:
+
+        (A) flex-start: makes items align to the beginning (left or top).
+        (B) flex-end: makes items align to the end (right or bottom).
+        (C) center: centers items along the line.
+        (D) space-between: evenly spreads items apart with the first at the beginning and the last at the end.
+        (E) space-around: evenly spreads items with space around each item.
+        (F) space-evenly: evenly spreads items with equal space around and between them.
+
+2. align-items:
+        align-items property controls how items inside a container are aligned along the cross-axis, which is perpendicular to the main axis (horizontal or vertical, depending on the flex direction).
+
+        (A) flex-start (default): Aligns items at the beginning of the cross-axis. For a row layout, it aligns items to the top, and for a column layout, it aligns items to the left.
+
+        (B) flex-end: Aligns items at the end of the cross-axis. For a row layout, it aligns items to the bottom, and for a column layout, it aligns items to the right.
+
+        (C) center: Centers items along the cross-axis, making them vertically or horizontally centered within the container.
+
+        (D) baseline: Aligns items such that their baselines (text baselines) are aligned. This is useful when we have text of varying font sizes within the container.
+
+        (E) stretch: This value stretches items to fill the entire cross-axis of the container. If we don't set a specific height (for rows) or width (for columns) on the items, they will stretch to match the container's cross-axis dimension.
+
+
+3. gap:
+    In Flexbox, there isn't a direct property called "gap" like we have in CSS Grid. However, you can create spacing between flex items by using margins or padding on the items themselves or by using a combination of properties like justify-content and margin.
+
+4. flex-direction:
+    flex-direction is a CSS property used in Flexbox to determine the direction in which the flex items are placed inside a flex container. It defines the main axis of the flex layout, which can be either horizontal (left-to-right or right-to-left) or vertical (top-to-bottom or bottom-to-top).
+
+    (A) row (default): This value arranges flex items in a horizontal line, from left to right. It's like a row of items.
+
+    (B) row-reverse: Similar to "row," but it reverses the order of items, starting from right to left.
+
+    (C) column: This value arranges flex items in a vertical line, from top to bottom. It's like a column of items.
+
+    (D) column-reverse: Similar to "column," but it reverses the order of items, starting from bottom to top.
+
+
+5. flex-wrap:
+    flex-wrap is a CSS property used in Flexbox to control whether flex items should wrap onto the next line when they don't fit within the available space of their parent container.
+
+    (A) nowrap (default): This value means that flex items will not wrap to the next line. They will try to fit within the container's width (for a row layout) or height (for a column layout) without wrapping.
+
+    (B) wrap: With this value, flex items will wrap onto the next line if they can't fit within the container's width (for a row layout) or height (for a column layout). This allows for multiple rows or columns of flex items.
+
+    (C) wrap-reverse: Similar to "wrap," but it reverses the order of wrapping. It starts wrapping from the opposite direction, creating rows or columns in the reverse order.

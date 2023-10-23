@@ -1,0 +1,47 @@
+<!-- Problem Statement:
+
+Explain the use of grid-auto-row and grid-auto-column using code examples. -->
+
+
+
+
+<!-- In CSS Grid Layout, the grid-auto-row and grid-auto-column properties are used to control the placement and sizing of grid items that don't explicitly specify their placement within the grid. These properties allow us to define default rows and columns for items that are auto-placed, meaning they are placed automatically by the grid without explicit grid-row or grid-column declarations. This is especially useful when dealing with dynamic content or items with varying sizes. -->
+
+<!-- Exapmle: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-auto</title>
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-rows: 100px 100px;
+          grid-template-columns: 100px 100px;
+          grid-gap: 10px;
+          grid-auto-rows: 50px; /*to control the sizing of implicitly created rows and sets the height of implicitly created rows to 50 pixels.*/
+          grid-auto-columns: 50px; /*to control the sizing of implicitly created columns and sets the width of implicitly created columns to 50 pixels.*/
+        }
+    
+        .grid-item {
+          background-color: lightblue;
+          border: 1px solid #333;
+          padding: 10px;
+          text-align: center;
+        }
+      </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+      </div>
+</body>
+</html>
+
+<!-- If we add more items to the grid, they will automatically create new rows and columns with a height and width of 50 pixels, maintaining the specified sizing. -->

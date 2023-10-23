@@ -1,0 +1,49 @@
+<!-- Problem Statement
+
+Create a grid based layout containing four grid items which arranges them as the screen size changes -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 5px;
+            padding: 10px;
+        }
+
+        .box{
+            width: 100%;
+            height: 200px;
+            padding: 20px;
+            color: white;
+            text-align: center;
+
+        }
+        
+        @media only screen and (max-width:500px) {
+            .container{
+                grid-template-columns: 1fr;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1" style="background-color: red;" >Box1</div>
+        <div class="box box2" style="background-color: green;" >Box2</div>
+        <div class="box box3" style="background-color: blue;">Box3</div>
+        <div class="box box4" style="background-color: orangered;">Box4</div>
+    </div>
+</body>
+</html>
