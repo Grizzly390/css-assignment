@@ -1,0 +1,142 @@
+<!-- Problem Statement
+Create a simple header that sticks to the top of a webpage upon scrolling. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <style>
+        
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .stick{
+            background-color: black;
+            padding-right: 15px;
+            padding-left: 15px;
+            position: sticky;
+            top: 0;
+        }
+
+        .navdiv{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo a {
+            /* color: white; */
+            font-family: 'Bodoni Moda', serif;
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+        }
+        a{
+            color: grey;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: white;
+        }
+
+        li{
+            list-style: none;
+            display: inline-block;
+        }
+
+        li a {
+            /* color: white; */
+            margin-right: 25px;
+            text-decoration: none;
+            font-family: 'Kalam', cursive;
+            font-size: 17px;
+        }
+
+        button{
+            background-color: black;
+            margin-left: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            border-color: yellow;
+        }
+
+        button a {
+            /* color: white; */
+            text-decoration: none;
+            font-family: 'Kalam', cursive;
+            font-size: 17px;
+            color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="stick">
+        <div class="navdiv">
+            <div class="logo"><a href="#">LOGO</a></div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+                <button><a href="">Get Started</a></button>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        <h2>Heading 1:</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo praesentium corporis, nesciunt nostrum ratione unde labore. Praesentium laborum recusandae voluptates unde, et hic voluptatem iste quis officia quas dolorem est!
+        Sed omnis ratione velit, explicabo magni quae aliquam, autem nulla officia excepturi ab voluptatem ad error quaerat ipsa numquam repudiandae. Illo, quas facilis rem soluta a ipsam cum laborum distinctio.
+        Nam quod quia, tempore doloribus velit omnis rerum qui corrupti illum eaque cum aspernatur voluptatibus quisquam fugit, fuga tempora cumque natus, ab illo! Reprehenderit consequatur corrupti quas obcaecati dolores optio!
+        Ullam possimus vel odio suscipit unde quam quae a aperiam accusantium voluptatum incidunt recusandae in odit dolore blanditiis, ad dolorum alias inventore tenetur error nam similique ipsum numquam. Ea, a.
+        Ex ullam quasi at quaerat distinctio ratione labore culpa voluptatum aspernatur laudantium expedita, modi, sequi quas, molestiae id quibusdam beatae recusandae et quisquam perspiciatis officia deleniti facere tenetur ipsum. Atque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde voluptatum qui ipsam quam quo corrupti vitae, aperiam ullam, consequatur laboriosam numquam blanditiis sint ducimus voluptate, dolores iure laborum excepturi adipisci?
+        Aut natus modi sequi! Mollitia excepturi, animi quae commodi nemo enim facere reprehenderit vero recusandae doloribus cupiditate tempore asperiores modi suscipit et cumque eligendi, sapiente culpa rerum unde laboriosam iusto.
+        Minus praesentium eos, ea est eveniet, odit animi distinctio officia alias quia, nihil voluptatum modi inventore perspiciatis pariatur. Veniam nulla nesciunt totam debitis minima odio ratione, quam magni modi voluptatem.
+        Assumenda ab molestiae numquam, praesentium velit sapiente! Fugiat expedita nihil architecto modi, reprehenderit beatae rerum quasi tenetur! Praesentium unde debitis, autem fuga dignissimos non doloribus similique ut iure neque? Rem.
+        Dignissimos ea, eligendi expedita quas, sunt dolorem eum temporibus sed doloremque illum modi velit exercitationem impedit nulla aliquid eveniet doloribus maxime eius quos. Atque eaque quasi at quam, maiores ab.
+        Enim molestiae vero cumque et fugit provident beatae, similique at voluptate porro, suscipit ducimus! Dolores repellendus velit doloribus neque quis, maxime ipsa vero iure amet aspernatur eos, harum ex commodi.
+        Libero odit cupiditate possimus impedit repudiandae corporis quam nihil a quo non neque quae saepe exercitationem ipsam, sed iste magni. Sint illum quia laborum quasi nostrum culpa nemo officia dolor!</p>
+    </div>
+
+    <div>
+        <h2>Heading 2:</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga at et maxime aspernatur magni assumenda dolorem, molestiae nam! Similique reprehenderit ad officiis et nesciunt quas ducimus nemo, necessitatibus veniam. Cum!
+            Officia, doloribus reiciendis? Suscipit deserunt explicabo ex consequuntur distinctio doloribus sint voluptatum sunt rerum! Quod eveniet assumenda nesciunt iusto culpa. Excepturi tempora cumque perferendis ullam perspiciatis itaque facilis sapiente. Deleniti.
+            Optio omnis dolores harum mollitia voluptas commodi, voluptates esse rerum distinctio, sapiente saepe vero pariatur, aut autem. Praesentium vitae porro mollitia exercitationem nobis est nostrum accusamus consectetur tempore, autem sequi.
+            Quae eligendi unde enim iure. Deleniti sed ea deserunt vero quisquam quos totam vitae quam. Dolor illo odit nam necessitatibus. Fuga assumenda aperiam voluptatum earum doloribus ipsa natus veritatis unde?
+            Nisi quaerat autem, sit magnam nulla, harum corporis maiores beatae quibusdam fugit et, enim illum ab? Officia, ipsum officiis! Architecto alias et ipsum voluptatum mollitia porro repellat assumenda expedita dolorem.
+            Voluptatibus perferendis, quas cupiditate sint voluptatum harum corporis voluptate. Id accusantium, quo deserunt ad exercitationem dolore recusandae quibusdam itaque tempora dolorum quae vel laborum veritatis animi necessitatibus natus expedita quia?
+            Exercitationem, harum. Reiciendis quo praesentium laboriosam neque aut beatae voluptas et consectetur error ab rem, quibusdam totam molestiae quis amet ex dolorum exercitationem corrupti recusandae? Ipsa deserunt dolores accusamus sapiente!
+        </p>
+    </div>
+
+    <div>
+        <h2>Heading 3:</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur quidem itaque possimus quia, vitae id. Obcaecati nobis at aut fuga vel odio, veniam, ad autem in officiis a ipsam consequuntur?
+            Ratione iusto asperiores, cupiditate, earum architecto saepe iste facilis aliquam vel facere omnis, accusamus maiores adipisci voluptatum. Tenetur eveniet facere, ex magni quod, culpa eaque iure, autem excepturi facilis deleniti.
+            Error expedita, modi voluptatibus necessitatibus repudiandae quia nihil tempore, corrupti fugit, exercitationem culpa. Possimus quisquam vel nisi nobis. Soluta ducimus eius modi? Aspernatur, ab. Aliquam accusamus dolor eligendi. Atque, recusandae?
+            Mollitia corrupti perspiciatis vero sequi odio maxime qui dolor officia possimus, praesentium eos quidem nulla voluptatem molestias accusantium cum ea? Minus temporibus aut dignissimos perferendis incidunt possimus reiciendis iste dicta.
+            Nostrum, officia? Adipisci eius vitae repellendus maxime quod magnam recusandae soluta quaerat, unde perspiciatis consequatur optio. Commodi architecto exercitationem aliquam dignissimos, necessitatibus fugiat! Minus illo assumenda quo quos id rerum?
+            Enim eligendi temporibus quibusdam tempore perferendis reprehenderit, pariatur sunt optio nemo est recusandae ab aspernatur aperiam magni inventore iste numquam, tenetur quis repellat dignissimos sed, veritatis nihil. Ad, provident aut!
+            Quo esse facilis dolorem est, voluptatem iste ut ipsum eaque deleniti ab praesentium consectetur aliquam ullam culpa saepe vitae quae molestiae veniam recusandae minus nulla repellendus id! Vero, officia ipsum!
+            Temporibus fuga nisi aut consequuntur et dolor consectetur blanditiis qui rerum reiciendis est beatae distinctio nemo minima sapiente debitis accusantium corrupti quisquam quos odit eligendi quo officiis, optio recusandae. Excepturi.
+            Quisquam debitis quia perferendis asperiores voluptatum ad at soluta libero. Minima placeat alias, sed veniam suscipit hic id adipisci illum, sequi porro totam aliquam, voluptates obcaecati possimus? Hic, ullam eaque.
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+Problem Statement
+Explain the difference between Absolute and Relative Positioning.
+
+
+
+In CSS, absolute and relative positioning are two differnet techniques used to cotrol the positioning of the elements of the web page.
+
+1. Relative Positioning:
+    It adjust an element's position while keeping it in the flow of the page. We can use properties like top, right, bottom, and left to shift the element from its normal position relative to itself. These properties move the element relative to its normal position, but they do not affect the position of surrounding elements.
+
+    Relative positioning is often used when you want to make minor adjustments to the position of an element without affecting the layout of other elements on the page. The element's final position is relative to its original position in the document flow, which means it can overlap other elements.
+
+    syntax--> position: relative;
+
+2. Absolute Positioning:
+    absolute positioning lets you place an element anywhere on the page, and it doesn't affect other elements. Elements with absolute positioning do not occupy space in the layout, so they can overlap other elements. This can be useful for creating layered or pop-up elements.
+
+    syntax--> position: absolute;
